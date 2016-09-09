@@ -8,11 +8,10 @@
 module.exports = {
 
   attributes: {
-  	schema: true,
+  	
   	musicianID: {
     	type: 'integer',
-    	required: true,
-    	unique: true,
+    	primaryKey: true,
     	autoIncrement: true
   },
   	firstName: {
@@ -42,7 +41,7 @@ module.exports = {
     phone: {
     	type: 'string',
     	regex: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
-    }
+    },
     salary: {
     	type: 'float',
     	defaultsTo: 0.00
